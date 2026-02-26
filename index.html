@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Chaitanya Balusu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">KC</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#opensource">Open Source</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#speaking">Speaking</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Krishna Chaitanya Balusu</h1>
+            <p class="hero-subtitle">Software Engineer at Meta Platforms</p>
+            <p class="hero-tagline">Building reliable AI systems, optimizing platforms at scale, and contributing to open source.</p>
+            <div class="hero-links">
+                <a href="https://linkedin.com/in/kcbalusu" target="_blank" class="btn btn-primary">LinkedIn</a>
+                <a href="https://github.com/Krishnachaitanyakc" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a href="mailto:krishnabkc15@gmail.com" class="btn btn-secondary">Email</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <p>Software Engineer with 7+ years of experience across Meta, Microsoft, and financial services. Currently working on AI-powered autonomous incident response systems at Meta. Passionate about accessibility, open-source software, and applying distributed systems principles to AI infrastructure. IEEE Senior Member, conference reviewer, and speaker on AI agent reliability.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Meta Platforms</h3>
+                                <span class="timeline-role">Software Engineer</span>
+                                <span class="timeline-date">July 2022 &ndash; Present</span>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="experience-block">
+                                    <h4>OpsMate &mdash; AI Ops Agent <span class="date-tag">Sept 2025 &ndash; Present</span></h4>
+                                    <p>Contributing to Meta's autonomous incident response system using a multi-agent architecture with specialized sub-agents for discovery, diagnosis, and mitigation. The system integrates with SEV Manager, monitoring systems, and detection platforms to provide end-to-end incident response, reducing average response times across Meta's global infrastructure.</p>
+                                </div>
+                                <div class="experience-block">
+                                    <h4>Instagram Feed &amp; Reels <span class="date-tag">Dec 2023 &ndash; Sept 2025</span></h4>
+                                    <p>Spearheaded latency and reliability optimizations for Instagram Feed and Reels, driving improvements in user engagement and platform performance at scale.</p>
+                                </div>
+                                <div class="experience-block">
+                                    <h4>Data Security Systems <span class="date-tag">July 2022 &ndash; Dec 2023</span></h4>
+                                    <p>Enhanced UX for a critical data security system ensuring device data erasure and destruction across data centers, improving efficiency for technicians while maintaining the highest data security standards.</p>
+                                </div>
+                                <p class="highlight">Level 1 Accessibility Champion within Meta (one of only 800 across the company)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Microsoft</h3>
+                                <span class="timeline-role">Software Engineer</span>
+                                <span class="timeline-date">July 2018 &ndash; May 2022</span>
+                            </div>
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Led design and implementation of cross-organization communication in Microsoft Teams</li>
+                                    <li>Integrated Teams with Azure Blob Store for caching, achieving &lt;100ms response times</li>
+                                    <li>Optimized user membership queries by 80x (40s to &lt;500ms)</li>
+                                    <li>Designed micro-services for user metadata storage</li>
+                                    <li>Implemented accessibility features and bug fixes in Microsoft PowerApps</li>
+                                    <li>Authored published whitepaper on PowerApps accessibility guidelines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Edelweiss Financial Services</h3>
+                                <span class="timeline-role">Machine Learning Intern</span>
+                                <span class="timeline-date">July 2017 &ndash; June 2018</span>
+                            </div>
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Built ML models for market volatility analysis and risk assessment</li>
+                                    <li>Developed loan application evaluation model integrating personal financial data with macroeconomic indicators</li>
+                                    <li>Used neural networks (BPN vs RNN) to forecast India's inflation rate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opensource" class="section">
+            <div class="container">
+                <h2 class="section-title">Open Source</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/DataPupOrg/DataPup" target="_blank">DataPup</a></h3>
+                            <span class="stars">280+ stars</span>
+                        </div>
+                        <p>Modern, cross-platform database client for ClickHouse powered by AI. Featured on the official ClickHouse site and personally starred by the creator of ClickHouse. Promoted by LangChain.</p>
+                        <div class="tags">
+                            <span class="tag">Maintainer</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/Krishnachaitanyakc/vibe-tree" target="_blank">Vibe-Tree</a></h3>
+                            <span class="stars">230+ stars</span>
+                        </div>
+                        <p>Cross-platform application enabling parallel development across multiple git worktrees for AI-assisted coding workflows. Part of the emerging "vibe coding" movement.</p>
+                        <div class="tags">
+                            <span class="tag">Creator</span>
+                            <span class="tag">Developer Tools</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/facebook/pyrefly" target="_blank">Pyrefly</a></h3>
+                            <span class="stars">3,600+ stars</span>
+                        </div>
+                        <p>Meta's high-performance Python type checker and language server. Provides lightning-fast type checking with IDE features. Significantly outperforms MyPy and Pyright in speed.</p>
+                        <div class="tags">
+                            <span class="tag">Contributor</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Meta</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/git-ai-project/git-ai" target="_blank">Git-AI</a></h3>
+                            <span class="stars">1,000+ stars</span>
+                        </div>
+                        <p>A Git extension for tracking AI-generated code in repositories.</p>
+                        <div class="tags">
+                            <span class="tag">Contributor</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/grafana/grafana" target="_blank">Grafana</a></h3>
+                            <span class="stars">72K+ stars</span>
+                        </div>
+                        <p>The open and composable observability and data visualization platform. Contributed PRs for metrics, logs, and traces visualization.</p>
+                        <div class="tags">
+                            <span class="tag">Contributor</span>
+                            <span class="tag">Observability</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/openobserve/openobserve" target="_blank">OpenObserve</a></h3>
+                            <span class="stars">18K+ stars</span>
+                        </div>
+                        <p>Modern observability platform &mdash; open-source alternative to Elasticsearch, Splunk, and Datadog for logs, metrics, traces, and RUM.</p>
+                        <div class="tags">
+                            <span class="tag">Contributor</span>
+                            <span class="tag">Observability</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><a href="https://github.com/meta-pytorch/KernelAgent" target="_blank">KernelAgent</a></h3>
+                            <span class="stars">220+ stars</span>
+                        </div>
+                        <p>Autonomous GPU kernel generation via deep agents. Turns PyTorch programs into verified Triton kernels.</p>
+                        <div class="tags">
+                            <span class="tag">Contributor</span>
+                            <span class="tag">GPU</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Awesome AI Tools / Coding Tools</h3>
+                            <span class="stars">5,600+ stars combined</span>
+                        </div>
+                        <p>Curated lists serving thousands of developers monthly, influencing AI tooling adoption decisions across the industry.</p>
+                        <div class="tags">
+                            <span class="tag">Curator</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-card">
+                    <h3>PowerApps Canvas App Accessibility Guidelines</h3>
+                    <p>Authored a whitepaper providing clear guidelines for building accessible applications within Microsoft PowerApps. The document has become a go-to resource for developers, influencing how apps are designed and built with accessibility in mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="speaking" class="section">
+            <div class="container">
+                <h2 class="section-title">Speaking &amp; Reviewing</h2>
+                <div class="speaking-grid">
+                    <div class="speaking-card">
+                        <span class="speaking-type">Speaker</span>
+                        <h3>AI Agents Event &mdash; Feb 2026</h3>
+                        <p class="talk-title">"Deterministic Outcomes in Non-Deterministic Systems: Engineering Reliability for AI Agents"</p>
+                        <p>Technical session on building production-grade agentic infrastructure by applying distributed systems principles to LLMs, ensuring five-nines reliability for enterprise AI operations.</p>
+                    </div>
+                    <div class="speaking-card">
+                        <span class="speaking-type">Media</span>
+                        <h3>TelecomReseller Podcast</h3>
+                        <p>Featured in "Inside Meta's Work on AI Agent Reliability and Platform Operations" podcast.</p>
+                    </div>
+                    <div class="speaking-card">
+                        <span class="speaking-type">Reviewer</span>
+                        <h3>10+ Conference Reviews</h3>
+                        <p>Reviewer for IEEE ICCCNT 2025, ICDSNE 2025, IEEE AIC 2025, and TPC Member for FTNCT 2025. Reviewed papers across data science, networking, computing, and applied intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h3>Georgia Institute of Technology</h3>
+                        <p class="degree">M.S. in Computer Science</p>
+                        <p class="specialization">Specialization: Computing Systems</p>
+                        <p class="edu-date">April 2020 &ndash; May 2023 &nbsp;|&nbsp; GPA: 3.5</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>BITS Pilani</h3>
+                        <p class="degree">M.S. in Mathematics &amp; B.E. in Mechanical Engineering</p>
+                        <p class="edu-date">August 2013 &ndash; June 2018 &nbsp;|&nbsp; GPA: 7.6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills &amp; Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span>Python</span><span>C++</span><span>C#</span><span>Java</span><span>Hack</span><span>PHP</span><span>C</span><span>Matlab</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Systems &amp; Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span>Distributed Systems</span><span>Micro-services</span><span>Protocol Buffers</span><span>RPC</span><span>Distributed File Systems</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data &amp; ML</h3>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Neural Networks</span><span>RNN</span><span>SQL</span><span>NoSQL</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Platforms</h3>
+                        <div class="skill-tags">
+                            <span>Microsoft Teams</span><span>Azure</span><span>PowerApps</span><span>Grafana</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skill-tags">
+                            <span>Latency Optimization</span><span>System Design</span><span>Accessibility</span><span>Data Security</span><span>Project Management</span><span>Six Sigma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="memberships" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Memberships</h2>
+                <div class="membership-list">
+                    <div class="membership-item">
+                        <span class="membership-org">IEEE</span>
+                        <span class="membership-level">Senior Member</span>
+                    </div>
+                    <div class="membership-item">
+                        <span class="membership-org">ACM</span>
+                        <span class="membership-level">Member</span>
+                    </div>
+                    <div class="membership-item">
+                        <span class="membership-org">IAENG</span>
+                        <span class="membership-level">Member</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <a href="mailto:krishnabkc15@gmail.com" class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">krishnabkc15@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/kcbalusu" target="_blank" class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/kcbalusu</span>
+                    </a>
+                    <a href="https://github.com/Krishnachaitanyakc" target="_blank" class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/Krishnachaitanyakc</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Krishna Chaitanya Balusu</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
