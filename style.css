@@ -258,17 +258,6 @@ h3 {
     font-size: 0.95rem;
 }
 
-/* ===== Memberships ===== */
-.memberships {
-    margin-top: 14px;
-    color: var(--ink-soft);
-    font-size: 0.95rem;
-}
-.memberships strong {
-    color: var(--ink);
-    font-weight: 600;
-}
-
 /* ===== Footer ===== */
 footer {
     margin-top: 72px;
