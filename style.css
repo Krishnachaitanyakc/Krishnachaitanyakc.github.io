@@ -234,30 +234,6 @@ h3 {
     max-width: 62ch;
 }
 
-/* ===== Skills ===== */
-.skills {
-    margin-top: 10px;
-    display: grid;
-    gap: 14px;
-}
-.skills > div {
-    display: grid;
-    grid-template-columns: 190px 1fr;
-    gap: 4px 20px;
-    align-items: baseline;
-}
-.skills dt {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-}
-.skills dd {
-    color: var(--ink-soft);
-    font-size: 0.95rem;
-}
-
 /* ===== Footer ===== */
 footer {
     margin-top: 72px;
@@ -276,9 +252,6 @@ footer {
     }
     section {
         margin-top: 44px;
-    }
-    .skills > div {
-        grid-template-columns: 1fr;
     }
 }
 
