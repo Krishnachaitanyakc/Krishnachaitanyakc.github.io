@@ -48,6 +48,31 @@ a:hover {
     text-decoration-color: var(--accent);
 }
 
+/* External-link marker. inline-block keeps the glyph out of the link's
+   underline; the @supports block gives it empty alt text so screen readers
+   skip it in browsers that understand the content alt syntax. */
+a[href^="http"]::after {
+    content: "\2197";
+    display: inline-block;
+    margin-left: 0.14em;
+    font-size: 0.82em;
+    line-height: 1;
+    vertical-align: baseline;
+}
+@supports (content: "x" / "y") {
+    a[href^="http"]::after {
+        content: "\2197" / "";
+    }
+}
+
+/* The mono rows set a small type size, and Spline Sans Mono draws the arrow
+   low and narrow — nudge it up and out so it stays legible there. */
+.contact-row a::after,
+.section-note a::after {
+    font-size: 0.95em;
+    vertical-align: 0.06em;
+}
+
 :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
@@ -290,6 +315,9 @@ footer {
     a {
         color: inherit;
         text-decoration: none;
+    }
+    a[href^="http"]::after {
+        content: none;
     }
     section {
         margin-top: 24px;
