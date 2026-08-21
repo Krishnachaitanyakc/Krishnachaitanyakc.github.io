@@ -48,29 +48,28 @@ a:hover {
     text-decoration-color: var(--accent);
 }
 
-/* External-link marker. inline-block keeps the glyph out of the link's
-   underline; the @supports block gives it empty alt text so screen readers
-   skip it in browsers that understand the content alt syntax. */
+/* External-link marker. Drawn as a masked SVG rather than the U+2197
+   glyph: the glyph renders thin and undersized in Figtree and Spline Sans
+   Mono, and its weight varies with whatever font actually resolves it.
+   The mask inherits currentColor and scales with the type size. */
 a[href^="http"]::after {
-    content: "\2197";
+    content: "";
     display: inline-block;
-    margin-left: 0.14em;
-    font-size: 0.82em;
-    line-height: 1;
-    vertical-align: baseline;
-}
-@supports (content: "x" / "y") {
-    a[href^="http"]::after {
-        content: "\2197" / "";
-    }
+    width: 0.68em;
+    height: 0.68em;
+    margin-left: 0.2em;
+    vertical-align: 0.01em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%2012'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3.3%208.7%208.7%203.3'/%3E%3Cpath%20d='M4.7%203.3H8.7V7.3'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%2012'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3.3%208.7%208.7%203.3'/%3E%3Cpath%20d='M4.7%203.3H8.7V7.3'/%3E%3C/svg%3E") no-repeat center / contain;
 }
 
-/* The mono rows set a small type size, and Spline Sans Mono draws the arrow
-   low and narrow — nudge it up and out so it stays legible there. */
+/* The mono rows set a smaller type size — give the arrow a little back. */
 .contact-row a::after,
-.section-note a::after {
-    font-size: 0.95em;
-    vertical-align: 0.06em;
+.section-note a::after,
+footer a::after {
+    width: 0.8em;
+    height: 0.8em;
 }
 
 :focus-visible {
@@ -317,7 +316,7 @@ footer {
         text-decoration: none;
     }
     a[href^="http"]::after {
-        content: none;
+        display: none;
     }
     section {
         margin-top: 24px;

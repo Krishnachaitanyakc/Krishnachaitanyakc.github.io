@@ -70,8 +70,13 @@
                 </div>
                 <p class="entry-role">Software Engineer</p>
                 <div class="sub">
-                    <h4>OpsMate — AI Ops Agent <span class="when">Sept 2025 – Present</span></h4>
-                    <p>Contributing to Meta's autonomous incident response system: a multi-agent architecture with specialized sub-agents for discovery, diagnosis, and mitigation, integrated with SEV Manager, monitoring, and detection platforms to reduce response times across Meta's global infrastructure.</p>
+                    <h4>OpsMate — Autonomous Incident Investigation <span class="when">Sept 2025 – Present</span></h4>
+                    <p>Meta's autonomous incident investigation agent, which the program reports investigates roughly 1,500 incidents per day.</p>
+                    <ul>
+                        <li>Designed and shipped the evaluation infrastructure — the skill-attribution evaluation with its automatic grading and logging pipeline, plus extended structured capture of human root causes — making agent output systematically gradable across the program. Listed author on &ldquo;Evaluating OpsMate: Grading AI Incident Investigations at Scale,&rdquo; <a href="https://atscaleconference.com/ai-data-2026/?tab=1&amp;item=27#agenda-item-27">@Scale AI &amp; Data 2026</a>.</li>
+                        <li>Built the mechanisms by which the agent recovers from its own failures without a human in the loop: the improve workflow and its batch mode, the determinism and safety hardening that followed, and a generalized inconclusive-retrigger promoted into the shared adaptive-investigator trait, so every investigation framework inherits automatic reinvestigation rather than getting it one surface at a time.</li>
+                        <li>Built the observability stack, including a lifecycle investigation skill that lets any engineer trace a failed agent run to the step that failed — silent failure being the characteristic failure mode of LLM agent systems, where the system reports success while producing nothing.</li>
+                    </ul>
                 </div>
                 <div class="sub">
                     <h4>Instagram Feed &amp; Reels <span class="when">Dec 2023 – Sept 2025</span></h4>
@@ -81,7 +86,6 @@
                     <h4>Data Security Systems <span class="when">July 2022 – Dec 2023</span></h4>
                     <p>Improved UX for a critical data-erasure and destruction system used across Meta's data centers, making technicians more efficient while maintaining the highest data-security standards.</p>
                 </div>
-                <p class="foot-note">Level 1 Accessibility Champion — one of 800 across Meta.</p>
             </article>
 
             <article class="entry">
