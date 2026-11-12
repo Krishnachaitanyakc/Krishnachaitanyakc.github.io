@@ -36,6 +36,7 @@ img { max-width: 100% }
 .gh { fill: #181717 }
 :root[data-theme="dark"] .gh { fill: #ffffff }
 .icons svg { width: 19px; height: 19px; display: block }
+.icons a.blog { width: auto; margin-left: auto; padding: 0 10px; margin-right: -10px; font: 500 13px/1 var(--mono); letter-spacing: .04em; color: var(--accent) }
 .toast { font: 12px var(--mono); color: var(--accent); margin-top: 6px; min-height: 1.2em }
 
 
