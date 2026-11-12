@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page.title %}{{ page.title }} · Kc Balusu{% else %}Krishna Chaitanya Balusu{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}profile{% endif %}">
+<meta property="og:title" content="{{ page.title | default: 'Krishna Chaitanya Balusu' | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231764c0%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%3EKc%3C%2Ftext%3E%3C%2Fsvg%3E">
+<script>try { if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/style.css">
+{% if page.url == "/" %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Krishna Chaitanya Balusu","alternateName":"Kc Balusu","url":"https://kcbalusu.com/","jobTitle":"Member of Technical Staff","worksFor":{"@type":"Organization","name":"AIUC","url":"https://aiuc.com"},"email":"mailto:balusukc@gmail.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"Georgia Institute of Technology"},{"@type":"CollegeOrUniversity","name":"BITS Pilani"}],"identifier":"https://orcid.org/0009-0001-0619-5131","sameAs":["https://www.linkedin.com/in/kcbalusu/","https://github.com/Krishnachaitanyakc","https://scholar.google.com/citations?user=kqbgdWQAAAAJ","https://orcid.org/0009-0001-0619-5131","https://dblp.org/pid/440/9689.html"]}</script>{% endif %}
+{% feed_meta %}

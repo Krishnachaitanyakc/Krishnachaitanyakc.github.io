@@ -1,25 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Krishna Chaitanya Balusu</title>
-<meta name="description" content="Krishna Chaitanya (Kc) Balusu is a Member of Technical Staff at AIUC working on the evaluation of AI agents, and a contributor to OpenTelemetry.">
-<link rel="canonical" href="https://kcbalusu.com/">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Krishna Chaitanya Balusu">
-<meta property="og:description" content="Krishna Chaitanya (Kc) Balusu is a Member of Technical Staff at AIUC working on the evaluation of AI agents, and a contributor to OpenTelemetry.">
-<meta property="og:url" content="https://kcbalusu.com/">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231764c0%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%3EKc%3C%2Ftext%3E%3C%2Fsvg%3E">
-<script>try { if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Krishna Chaitanya Balusu","alternateName":"Kc Balusu","url":"https://kcbalusu.com/","jobTitle":"Member of Technical Staff","worksFor":{"@type":"Organization","name":"AIUC","url":"https://aiuc.com"},"email":"mailto:balusukc@gmail.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"Georgia Institute of Technology"},{"@type":"CollegeOrUniversity","name":"BITS Pilani"}],"identifier":"https://orcid.org/0009-0001-0619-5131","sameAs":["https://www.linkedin.com/in/kcbalusu/","https://github.com/Krishnachaitanyakc","https://scholar.google.com/citations?user=kqbgdWQAAAAJ","https://orcid.org/0009-0001-0619-5131","https://dblp.org/pid/440/9689.html"]}</script>
-</head>
-<body>
+---
+layout: default
+---
 <main class="page"><div class="wrap">
 <header class="hero">
     <div>
@@ -74,25 +55,11 @@
       <span class="t"><a href="https://github.com/METR/hawk/pull/2809" target="_blank" rel="noopener">METR Hawk evaluation fixes</a></span><span class="repo">METR/hawk #2654, #2809</span><div class="d">Errored evaluation samples had been exported as successes.</div></div></div><div class="oss"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M5.45 5.15A2.25 2.25 0 1 0 4 5.97v4.06a2.25 2.25 0 1 0 1.5 0V8.5a3.98 3.98 0 0 0 3 1.5h1.53a2.25 2.25 0 1 0 0-1.5H8.5a2.5 2.5 0 0 1-2.5-2.5zM4.75 3.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm0 8.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm7.5-3.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg><div>
       <span class="t"><a href="https://github.com/huggingface/transformers/releases/tag/v5.5.0" target="_blank" rel="noopener">Hugging Face Transformers</a></span><span class="repo">v5.5.0 release notes</span><div class="d">Config type annotations for strict validation; listed under significant community contributions.</div></div></div></div></section>
 
-  <section class="sec"><h2>Talks & writing</h2><div class="body"><div class="row"><span><a href="https://www.conf42.com/Prompt_Engineering_2026_Krishna_Chaitanya_Balusu_debugging_plan_fail" target="_blank" rel="noopener">You Cannot Fix a Prompt You Cannot See Fail</a></span><span class="m">Oct 2026</span><span class="d">Conf42 Prompt Engineering</span></div><div class="row"><span><a href="https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/" target="_blank" rel="noopener">Deprecating OpenCensus compatibility</a></span><span class="m">Jun 2026</span><span class="d">OpenTelemetry blog</span></div><div class="row"><span>Deterministic Outcomes in Non-Deterministic Systems</span><span class="m">Feb 2026</span><span class="d">AI Agents Event East</span></div></div></section>
+  <section class="sec" id="blog"><h2>Blog</h2><div class="body">{% for post in site.posts limit:5 %}<div class="row"><span><a href="{{ post.external_url | default: post.url }}"{% if post.external_url %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a></span><span class="m">{{ post.date | date: "%b %Y" }}</span>{% if post.venue %}<span class="d">{{ post.venue }}</span>{% endif %}</div>{% endfor %}{% if site.posts.size > 5 %}<p class="more"><a href="/blog/">All posts</a></p>{% endif %}</div></section>
+
+  <section class="sec"><h2>Talks</h2><div class="body"><div class="row"><span><a href="https://www.conf42.com/Prompt_Engineering_2026_Krishna_Chaitanya_Balusu_debugging_plan_fail" target="_blank" rel="noopener">You Cannot Fix a Prompt You Cannot See Fail</a></span><span class="m">Oct 2026</span><span class="d">Conf42 Prompt Engineering</span></div><div class="row"><span>Deterministic Outcomes in Non-Deterministic Systems</span><span class="m">Feb 2026</span><span class="d">AI Agents Event East</span></div></div></section>
 
   <section class="sec"><h2>Service</h2><div class="body"><div class="row"><span>Mentor, SPAR Fall 2026</span><span class="m"></span><span class="d">A validity audit of trace-based failure monitors for LLM agents</span></div><div class="row"><span>Program committees and reviewing</span><span class="m"></span><span class="d">IEEE BigData 2026; workshops at NeurIPS, COLM and EMNLP</span></div><div class="row"><span>Member, OpenTelemetry organization</span><span class="m"></span><span class="d">Since 2026</span></div><div class="row"><span>Fellow, BCS · Senior Member, IEEE</span><span class="m"></span></div></div></section>
 
   <section class="sec"><h2>Education</h2><div class="body"><div class="row"><span>Georgia Tech</span><span class="m">2023</span><span class="d">MS Computer Science, Computing Systems</span></div><div class="row"><span>BITS Pilani</span><span class="m">2018</span><span class="d">MSc Mathematics, BE Mechanical Engineering</span></div></div></section>
 
-  <footer class="foot"><span>© 2026 Krishna Chaitanya Balusu</span><span><i>Set in Literata and IBM Plex</i> · <button class="theme" id="theme" type="button">Dark mode</button></span></footer>
-</div></main>
-<script>
-(() => {
-  const root = document.documentElement, b = document.getElementById("theme");
-  const label = () => { b.textContent = root.dataset.theme === "dark" ? "Light mode" : "Dark mode"; };
-  b.addEventListener("click", () => {
-    if (root.dataset.theme === "dark") delete root.dataset.theme; else root.dataset.theme = "dark";
-    try { localStorage.setItem("theme", root.dataset.theme || "light"); } catch (e) {}
-    label();
-  });
-  label();
-})();
-</script>
-</body>
-</html>

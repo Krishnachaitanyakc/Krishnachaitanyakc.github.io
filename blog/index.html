@@ -1,0 +1,9 @@
+---
+layout: default
+title: Blog
+description: Writing by Krishna Chaitanya (Kc) Balusu on evaluating AI agents and observability.
+---
+<main class="page"><div class="wrap">
+  <nav class="crumbs"><a href="/">Krishna Chaitanya Balusu</a></nav>
+  <header class="post"><h1>Blog</h1><p class="meta"><a href="/feed.xml">RSS feed</a></p></header>
+  <div class="posts">{% for post in site.posts %}{% assign y = post.date | date: "%Y" %}{% if y != last %}<h2 class="yrh">{{ y }}</h2>{% assign last = y %}{% endif %}<div class="row"><span><a href="{{ post.external_url | default: post.url }}"{% if post.external_url %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a></span><span class="m">{{ post.date | date: "%b %-d" }}</span>{% if post.venue %}<span class="d">{{ post.venue }}</span>{% endif %}</div>{% endfor %}</div>

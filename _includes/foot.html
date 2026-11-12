@@ -1,0 +1,14 @@
+  <footer class="foot"><span>© 2026 Krishna Chaitanya Balusu</span><span><i>Set in Literata and IBM Plex</i> · <button class="theme" id="theme" type="button">Dark mode</button></span></footer>
+</div></main>
+<script>
+(() => {
+  const root = document.documentElement, b = document.getElementById("theme");
+  const label = () => { b.textContent = root.dataset.theme === "dark" ? "Light mode" : "Dark mode"; };
+  b.addEventListener("click", () => {
+    if (root.dataset.theme === "dark") delete root.dataset.theme; else root.dataset.theme = "dark";
+    try { localStorage.setItem("theme", root.dataset.theme || "light"); } catch (e) {}
+    label();
+  });
+  label();
+})();
+</script>

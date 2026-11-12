@@ -1,0 +1,18 @@
+title: Krishna Chaitanya Balusu
+description: Krishna Chaitanya (Kc) Balusu is a Member of Technical Staff at AIUC working on the evaluation of AI agents, and a contributor to OpenTelemetry.
+url: https://kcbalusu.com
+author: Krishna Chaitanya Balusu
+permalink: /blog/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+exclude: [README.md]
