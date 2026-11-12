@@ -30,12 +30,12 @@ img { max-width: 100% }
 .hero h1 { font: 500 clamp(36px, 6.4vw, 52px)/1.04 var(--serif); letter-spacing: -.022em; margin: 0 0 14px; text-wrap: balance }
 .role { font-size: 15px; color: var(--muted); margin: 0 }
 .role b { color: var(--fg); font-weight: 500 }
-.icons { display: flex; gap: 6px; margin-top: 22px; margin-left: -9px }
-.icons a { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 9px; text-decoration: none }
+.icons { display: flex; gap: 6px; margin-top: 22px; margin-left: -10px }
+.icons a { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 10px; text-decoration: none }
 .icons a:hover { background: var(--wash) }
 .gh { fill: #181717 }
 :root[data-theme="dark"] .gh { fill: #ffffff }
-.icons svg { width: 19px; height: 19px; display: block }
+.icons svg { width: 23px; height: 23px; display: block }
 .icons a.blog { width: auto; white-space: nowrap; margin-left: auto; padding: 0 10px; margin-right: -10px; font: 500 16px/1 var(--sans); color: var(--accent) }
 .toast { font: 12px var(--mono); color: var(--accent); margin-top: 6px; min-height: 1.2em }
 
